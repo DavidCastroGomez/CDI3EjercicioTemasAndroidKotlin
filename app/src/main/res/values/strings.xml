@@ -2,4 +2,6 @@
     <string name="app_name">ModuloDosFirebaseCDI</string>
     <string name="field_email_label">papopepo</string>
     <string name="field_password_label">parabapapopa</string>
+    <string name="home_title">Home\n</string>
+    <string name="chat_title">Chat\n</string>
 </resources>

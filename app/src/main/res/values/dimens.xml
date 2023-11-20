@@ -6,6 +6,7 @@
     <dimen name="small">8dp</dimen>
     <dimen name="medium">16dp</dimen>
     <dimen name="large">32dp</dimen>
+    <dimen name="giant">48dp</dimen>
 
     <!-- Margin -->
     <dimen name="margin_normal">@dimen/medium</dimen>
@@ -16,4 +17,8 @@
 
     <!-- Radius -->
     <dimen name="radius_normal">@dimen/tiny</dimen>
+
+
+    <!--ButtonSize -->
+    <dimen name="button_size">@dimen/giant</dimen>
 </resources>

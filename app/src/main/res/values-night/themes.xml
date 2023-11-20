@@ -3,19 +3,5 @@
     <style name="Theme.ModuloDosFirebaseCDI" parent="Theme.ModuloDosFirebaseCDI.Base">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/baseGrey</item>
-        <item name="colorPrimaryVariant">@color/lightGrey</item>
-        <item name="colorOnPrimary">@color/baseLight</item>
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/baseLight</item>
-        <item name="colorSecondaryVariant">@color/lighterLight</item>
-        <item name="colorOnSecondary">@color/baseGrey</item>
-
-        <!-- Tucara colors -->
-        <item name="colorSurface">?attr/colorSecondary</item>
-        <item name="colorOnSurface">?attr/colorOnSecondary</item>
-
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
     </style>
 </resources>

@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="baseGrey">#444045</color>
+        <color name="baseGrey">#444045</color>
     <color name="lightGrey">#666267</color>
     <color name="baseLight">#EDDC9D</color>
     <color name="lighterLight">#F3E8C3</color>
+    <color name="baseLightAlphaLow">#40EDDC9D</color>
+    <color name="baseLightAlphaMid">#80EDDC9D</color>
 
 
     <color name="baseBlue">#012B54</color>
