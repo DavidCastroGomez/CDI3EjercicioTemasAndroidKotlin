@@ -13,6 +13,12 @@
         tools:layout="@layout/screen_home"
         >
 
+        <action
+            android:id="@+id/transition_home_to_chat"
+            app:destination="@id/chat_navigation_screen"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"/>
+
     </fragment>
 
     <fragment
@@ -21,6 +27,12 @@
         android:label="@string/chat_title"
         tools:layout="@layout/screen_chat"
         >
+
+        <action
+            android:id="@+id/transition_chat_to_home"
+            app:destination="@id/home_navigation_screen"
+            app:enterAnim="@anim/enter_from_left"
+            app:exitAnim="@anim/exit_to_right"/>
 
     </fragment>
 

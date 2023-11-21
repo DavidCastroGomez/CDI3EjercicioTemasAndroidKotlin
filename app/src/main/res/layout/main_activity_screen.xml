@@ -23,7 +23,10 @@
             android:id="@+id/componentNavHostContainer"
             android:name="com.enti.dostres.cdi.davidcastrogomez.myapplication.fragments.components.AppNavHost"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            tools:layout = "@layout/component_navhost"
+            android:layout_above="@+id/componentNavigationBottomBarContainer"
+            android:layout_below="@+id/componentToolbarContainer"
             ></androidx.fragment.app.FragmentContainerView>
         
         <androidx.fragment.app.FragmentContainerView

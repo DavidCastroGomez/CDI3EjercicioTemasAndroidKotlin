@@ -42,8 +42,4 @@ class AppNavHost : Fragment() {
         super.onViewCreated(view, savedInstanceState)
     }
 
-    fun navigate(homeNavigationScreen: Int) {
-
-    }
-
 }
