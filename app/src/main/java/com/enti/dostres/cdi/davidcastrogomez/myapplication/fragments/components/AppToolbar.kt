@@ -34,6 +34,18 @@ class AppToolbar : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        toolbar.setOnMenuItemClickListener { menuItem ->
+
+            when(menuItem.itemId){
+                R.id.toolbar_button_test -> {
+
+                }
+            }
+
+            true
+
+        }
     }
 
 }

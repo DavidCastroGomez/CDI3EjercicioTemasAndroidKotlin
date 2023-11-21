@@ -9,6 +9,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:title="@string/app_name"
+        app:navigationIcon="@drawable/baseline_menu_24"
+        app:menu="@menu/toolbar_base_menu"
         />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
