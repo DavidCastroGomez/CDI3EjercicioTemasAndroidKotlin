@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "395280140661",
+    "project_id": "modulodosfirebasecdidavidpedro",
+    "storage_bucket": "modulodosfirebasecdidavidpedro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395280140661:android:ceec0c944721601b7a6b3c",
+        "android_client_info": {
+          "package_name": "com.enti.dostres.cdi.davidcastrogomez.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVWnEJcxeJ209Adnr00CTEbc5t2Tcv0mo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,8 +1,8 @@
-package com.enti.dostres.cdi.davidcastrogomez.myapplication
+package com.enti.dostres.cdi.davidcastrogomez.myapplication.activities
 
 import android.os.Bundle
-import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
+import com.enti.dostres.cdi.davidcastrogomez.myapplication.R
 
 class MainActivity : AppCompatActivity(){
 
