@@ -5,4 +5,9 @@
     <string name="home_title">Home\n</string>
     <string name="chat_title">Chat\n</string>
     <string name="login_title">Login</string>
+    <string name="field_verify_password_label">epapepapopepo</string>
+    <string name="login_button">When me</string>
+    <string name="register_button">when the you</string>
+    <string name="back_to_login_button">return to monke</string>
+    <string name="end_register_button">finish monke</string>
 </resources>

@@ -12,7 +12,20 @@
           "package_name": "com.enti.dostres.cdi.davidcastrogomez.myapplication"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "395280140661-bte06ubs3s6220dlrep3dvvnfjhnv49k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.enti.dostres.cdi.davidcastrogomez.myapplication",
+            "certificate_hash": "f5c3a72bb7179ccd21a1eecfb8aa98973cd5842c"
+          }
+        },
+        {
+          "client_id": "395280140661-r6imos8m9p4guj2rk9ot4c4s5m2a0fq9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyDVWnEJcxeJ209Adnr00CTEbc5t2Tcv0mo"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "395280140661-r6imos8m9p4guj2rk9ot4c4s5m2a0fq9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

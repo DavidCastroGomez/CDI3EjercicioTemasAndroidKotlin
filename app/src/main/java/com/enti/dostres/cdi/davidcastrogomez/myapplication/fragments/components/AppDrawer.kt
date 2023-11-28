@@ -10,6 +10,7 @@ import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.NavHostFragment
 import com.enti.dostres.cdi.davidcastrogomez.myapplication.R
+import com.enti.dostres.cdi.davidcastrogomez.myapplication.fragments.screens.LogScreen
 import com.google.android.material.navigation.NavigationView
 
 class AppDrawer: Fragment() {
@@ -21,7 +22,7 @@ class AppDrawer: Fragment() {
 
     lateinit var fragmentView: View
     val drawer by lazy {fragmentView.findViewById<DrawerLayout>(R.id.AppDrawer)}
-    val navigationDrawer by lazy {fragmentView.findViewById<NavigationView>(R.id.navigationDrawerContainer)}
+    val navigationDrawer by lazy {fragmentView.findViewById<NavigationView>(R.id.navigationDrawer)}
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,6 +43,27 @@ class AppDrawer: Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        navigationDrawer.setNavigationItemSelectedListener { menuItem ->
+
+            when(menuItem.itemId){
+                R.id.login_drawer_button -> {
+                    val loginScreen  = LogScreen()
+                    val transaction = childFragmentManager.beginTransaction()
+                    transaction.setCustomAnimations(
+                        R.anim.enter_from_right, R.anim.exit_to_right,
+                        R.anim.enter_from_right, R.anim.exit_to_right)
+
+                    transaction.replace(R.id.reusableDialogsContainer, loginScreen)
+                        .addToBackStack(null)
+                        .commit()
+
+                    drawer.close()
+                }
+            }
+
+            true
+        }
     }
 
     fun openDrawer(){
