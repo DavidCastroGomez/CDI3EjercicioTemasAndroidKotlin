@@ -6,40 +6,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical">
 
-    <RelativeLayout
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/navigationDrawerContainer"
+        android:name="com.enti.dostres.cdi.davidcastrogomez.myapplication.fragments.components.AppDrawer"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/componentToolbarContainer"
-            android:name="com.enti.dostres.cdi.davidcastrogomez.myapplication.fragments.components.AppToolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            tools:layout ="@layout/component_toolbar"
-            />
-
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/componentNavHostContainer"
-            android:name="com.enti.dostres.cdi.davidcastrogomez.myapplication.fragments.components.AppNavHost"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:layout = "@layout/component_navhost"
-            android:layout_above="@+id/componentNavigationBottomBarContainer"
-            android:layout_below="@+id/componentToolbarContainer"
-            ></androidx.fragment.app.FragmentContainerView>
-        
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/componentNavigationBottomBarContainer"
-            android:name="com.enti.dostres.cdi.davidcastrogomez.myapplication.fragments.components.AppBottomBar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            tools:layout="@layout/component_bottombar"
-            />
-
-
-    </RelativeLayout>
+        android:layout_height="match_parent"
+        tools:layout="@layout/component_navigationdrawer"
+        />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
