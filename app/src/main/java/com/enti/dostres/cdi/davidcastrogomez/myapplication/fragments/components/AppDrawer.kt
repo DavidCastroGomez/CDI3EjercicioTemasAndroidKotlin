@@ -10,7 +10,7 @@ import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.NavHostFragment
 import com.enti.dostres.cdi.davidcastrogomez.myapplication.R
-import com.enti.dostres.cdi.davidcastrogomez.myapplication.fragments.screens.LogScreen
+import com.enti.dostres.cdi.davidcastrogomez.myapplication.fragments.screens.LoginScreen
 import com.google.android.material.navigation.NavigationView
 
 class AppDrawer: Fragment() {
@@ -48,7 +48,7 @@ class AppDrawer: Fragment() {
 
             when(menuItem.itemId){
                 R.id.login_drawer_button -> {
-                    val loginScreen  = LogScreen()
+                    val loginScreen  = LoginScreen()
                     val transaction = childFragmentManager.beginTransaction()
                     transaction.setCustomAnimations(
                         R.anim.enter_from_right, R.anim.exit_to_right,

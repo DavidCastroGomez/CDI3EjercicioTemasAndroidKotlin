@@ -81,4 +81,13 @@
     <style name="ModuloDosFirebaseCDI.FloatingButtonExtended" parent="Widget.MaterialComponents.ExtendedFloatingActionButton">
 
     </style>
+
+    <style name="ModuloDosFirebaseCDI.Snackbar" parent="Widget.MaterialComponents.Snackbar">
+        <item name="elevation">@dimen/shadow_elevation</item>
+    </style>
+
+    <style name="ModuloDosFirebaseCDI.SnackBar.TextView" parent="Widget.MaterialComponents.Snackbar.TextView">
+        <item name="android:textColor">@color/baseLight</item>
+    </style>
+
 </resources>
