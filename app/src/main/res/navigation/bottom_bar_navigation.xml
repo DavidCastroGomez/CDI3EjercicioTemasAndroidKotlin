@@ -23,7 +23,7 @@
 
     <fragment
         android:id="@+id/chat_navigation_screen"
-        android:name="com.enti.dostres.cdi.davidcastrogomez.myapplication.fragments.screens.ChatScreen"
+        android:name="com.enti.dostres.cdi.davidcastrogomez.myapplication.fragments.screens.chat.ChatScreen"
         android:label="@string/chat_title"
         tools:layout="@layout/screen_chat"
         >

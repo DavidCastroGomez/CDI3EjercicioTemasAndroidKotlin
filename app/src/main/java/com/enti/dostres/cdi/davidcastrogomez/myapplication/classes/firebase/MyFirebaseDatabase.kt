@@ -73,4 +73,18 @@ class MyFirebaseDatabase {
             }
 
     }
+
+    inline fun <reified T:DbBaseData>onTableChange(table: String, crossinline onChange: (MutableList<T>) -> Unit){
+        db.collection(table).addSnapshotListener {snapShot, error ->
+
+            //TODO CONTROL ERROR
+
+            val objects = snapShot?.toObjects(T::class.java)
+
+            objects?.let{objects ->
+                onChange(objects)
+            }
+
+        }
+    }
 }

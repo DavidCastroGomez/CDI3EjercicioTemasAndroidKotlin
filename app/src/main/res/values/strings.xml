@@ -13,4 +13,6 @@
     <string name="login_error">Error on try login</string>
     <string name="user_login_message">Hello %s you are loged</string>
     <string name="unknown_user">User Unknown</string>
+    <string name="profile_title">Profile\n</string>
+    <string name="chat_messages_hint">soy una hint</string>
 </resources>

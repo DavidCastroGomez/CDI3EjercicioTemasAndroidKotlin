@@ -11,6 +11,8 @@ class MyFirebaseAuth(val appContext: Application) {
     private val firebaseAuth = FirebaseAuth.getInstance()
     private var currentUser: DbUser? = null
 
+    fun isLoginActive() = getUser() != null
+
     fun getUser() = currentUser
 
     fun setCurrentUser(newUser : DbUser){

@@ -31,6 +31,9 @@
         <item name="textInputStyle">@style/ModuloDosFirebaseCDI.Input</item>
         <item name="materialButtonStyle">@style/ModuloDosFirebaseCDI.Button</item>
         <item name="extendedFloatingActionButtonStyle">@style/ModuloDosFirebaseCDI.FloatingButtonExtended</item>
+        <item name="snackbarStyle">@style/ModuloDosFirebaseCDI.Snackbar</item>
+        <item name="snackbarTextViewStyle">@style/ModuloDosFirebaseCDI.SnackBar.TextView</item> 
+        <item name="android:textViewStyle">@style/ModuloDosFirebaseCDI.TextView</item>
     </style>
 
     <style name="ModuloDosFirebaseCDI.Drawer" parent="Widget.MaterialComponents.NavigationView">
@@ -44,14 +47,14 @@
         <item name="android:elevation">@dimen/shadow_elevation</item>
         <item name="navigationIconTint">@color/baseLight</item>
     </style>
-    
+
     <style name="ModuloDosFirebaseCDI.BottomBar" parent="Widget.MaterialComponents.BottomNavigationView">
-        <item name="background">@color/baseGrey</item>
-        <item name="elevation">@dimen/shadow_elevation</item>
+        <item name="android:background">@color/baseGrey</item>
+        <item name="android:elevation">@dimen/shadow_elevation</item>
         <item name="itemIconTint">@color/selectables_buttons_color</item>
         <item name="itemRippleColor">@color/baseLightAlphaLow</item>
     </style>
-    
+
     <style name="ModuloDosFirebaseCDI.CardView" parent="Widget.MaterialComponents.CardView">
         <item name="cardElevation">@dimen/shadow_elevation</item>
     </style>
@@ -69,7 +72,7 @@
     <style name="ModuloDosFirebaseCDI.Button" parent="Widget.MaterialComponents.Button">
         <item name="android:textColor">@color/baseLight</item>
         <item name="backgroundTint">@color/baseGrey</item>
-        <item name="rippleColor">@color/baseGrey</item>
+        <item name="rippleColor">@color/lighterLight</item>
         <item name="android:stateListAnimator">@null</item>
         <item name="android:elevation">@dimen/shadow_elevation</item>
     </style>
@@ -89,5 +92,8 @@
     <style name="ModuloDosFirebaseCDI.SnackBar.TextView" parent="Widget.MaterialComponents.Snackbar.TextView">
         <item name="android:textColor">@color/baseLight</item>
     </style>
-
+    
+    <style name="ModuloDosFirebaseCDI.TextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/baseLight</item>
+    </style>
 </resources>
