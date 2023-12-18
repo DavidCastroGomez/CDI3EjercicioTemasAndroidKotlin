@@ -17,6 +17,8 @@ class MainActivity : AppCompatActivity(){
             key("papopepo", true)
         }
 
+        setTheme(FB.remoteConfig.getTheme().themeId)
+
     }
 
 }

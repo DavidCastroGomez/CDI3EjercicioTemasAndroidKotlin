@@ -36,20 +36,25 @@
         <item name="android:textViewStyle">@style/ModuloDosFirebaseCDI.TextView</item>
     </style>
 
+    <style name="Theme.ModuloDosFirebaseCDI.Christmas" parent="Theme.ModuloDosFirebaseCDI">
+        <item name="colorPrimary">@color/baseRed</item>
+        <item name="colorSecondary">@color/baseGreen</item>
+    </style>
+
     <style name="ModuloDosFirebaseCDI.Drawer" parent="Widget.MaterialComponents.NavigationView">
-        <item name="itemIconTint">@color/baseLight</item>
-        <item name="itemTextColor">@color/baseLight</item>
+        <item name="itemIconTint">?attr/colorPrimary</item>
+        <item name="itemTextColor">?attr/colorPrimary</item>
         <item name="elevation">@dimen/shadow_elevation</item>
     </style>
 
     <style name="ModuloDosFirebaseCDI.Toolbar" parent="Widget.MaterialComponents.Toolbar">
-        <item name="android:background">@color/baseGrey</item>
+        <item name="android:background">?attr/colorSecondary</item>
         <item name="android:elevation">@dimen/shadow_elevation</item>
-        <item name="navigationIconTint">@color/baseLight</item>
+        <item name="navigationIconTint">?attr/colorPrimary</item>
     </style>
 
     <style name="ModuloDosFirebaseCDI.BottomBar" parent="Widget.MaterialComponents.BottomNavigationView">
-        <item name="android:background">@color/baseGrey</item>
+        <item name="android:background">?attr/colorSecondary</item>
         <item name="android:elevation">@dimen/shadow_elevation</item>
         <item name="itemIconTint">@color/selectables_buttons_color</item>
         <item name="itemRippleColor">@color/baseLightAlphaLow</item>
@@ -63,15 +68,15 @@
         <item name="boxStrokeWidth">@dimen/tiny</item>
         <item name="boxStrokeWidthFocused">@dimen/tiny</item>
         <item name="boxStrokeErrorColor">@color/baseRed</item>
-        <item name="android:textColorHint">@color/baseLight</item>
+        <item name="android:textColorHint">?attr/colorPrimary</item>
         <item name="hintTextColor">@color/lighterLight</item>
-        <item name="startIconTint">@color/baseLight</item>
-        <item name="endIconTint">@color/baseLight</item>
+        <item name="startIconTint">?attr/colorPrimary</item>
+        <item name="endIconTint">?attr/colorPrimary</item>
     </style>
 
     <style name="ModuloDosFirebaseCDI.Button" parent="Widget.MaterialComponents.Button">
-        <item name="android:textColor">@color/baseLight</item>
-        <item name="backgroundTint">@color/baseGrey</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="backgroundTint">?attr/colorSecondary</item>
         <item name="rippleColor">@color/lighterLight</item>
         <item name="android:stateListAnimator">@null</item>
         <item name="android:elevation">@dimen/shadow_elevation</item>
@@ -90,10 +95,10 @@
     </style>
 
     <style name="ModuloDosFirebaseCDI.SnackBar.TextView" parent="Widget.MaterialComponents.Snackbar.TextView">
-        <item name="android:textColor">@color/baseLight</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
     </style>
     
     <style name="ModuloDosFirebaseCDI.TextView" parent="Widget.MaterialComponents.TextView">
-        <item name="android:textColor">@color/baseLight</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
     </style>
 </resources>

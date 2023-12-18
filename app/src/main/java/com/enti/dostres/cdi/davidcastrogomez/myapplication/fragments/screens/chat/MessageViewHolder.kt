@@ -1,5 +1,7 @@
 package com.enti.dostres.cdi.davidcastrogomez.myapplication.fragments.screens.chat
 
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
 import android.view.Gravity
 import android.view.View
 import android.widget.LinearLayout
@@ -9,6 +11,11 @@ import com.enti.dostres.cdi.davidcastrogomez.myapplication.classes.firebase.FB
 import com.enti.dostres.cdi.davidcastrogomez.myapplication.classes.models.DbMessage
 import com.google.android.material.imageview.ShapeableImageView
 import com.google.android.material.textview.MaterialTextView
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.launch
+import java.net.URL
 
 class MessageViewHolder(view : View) : RecyclerView.ViewHolder(view) {
 
@@ -30,7 +37,20 @@ class MessageViewHolder(view : View) : RecyclerView.ViewHolder(view) {
             message.visibility = View.GONE
         }
 
-        dbMessage.imageURL?.let{
+        dbMessage.imageURL?.let{imageUrl ->
+
+
+            //Placeholder
+            CoroutineScope(Dispatchers.IO).launch{
+
+                val stream = URL(imageUrl).openStream()
+                val bitMap = BitmapFactory.decodeStream(stream)
+
+                CoroutineScope(Dispatchers.Main).launch {
+                    image.setImageBitmap(bitMap)
+                    image.visibility = View.VISIBLE
+                }
+            }
 
             image.visibility = View.VISIBLE
         } ?: kotlin.run {
